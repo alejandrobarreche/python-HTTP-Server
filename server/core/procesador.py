@@ -1,44 +1,60 @@
-
 import threading
 import queue
 import time
 from ..config import logger
 
-# Procesador en segundo plano para la cola de solicitudes
+
 class ProcesadorCola(threading.Thread):
     """
-    Thread en segundo plano que procesa la cola de solicitudes.
-    Demuestra el uso de colas para comunicación entre threads.
+    Hilo de fondo que procesa la cola de solicitudes.
+
+    Este thread se encarga de obtener solicitudes de la cola, simular su procesamiento
+    y registrar la operación realizada, demostrando el uso de colas para la comunicación
+    entre threads.
     """
+
     def __init__(self, recursos):
+        """
+        Inicializa el procesador de cola.
+
+        Args:
+            recursos: Objeto que contiene la cola de solicitudes y otros recursos compartidos.
+        """
         super().__init__(daemon=True)
         self.recursos = recursos
         self.running = True
         self.name = "ProcesadorCola"
 
     def run(self):
-        """Procesa elementos de la cola continuamente"""
+        """
+        Ejecuta el procesamiento continuo de la cola de solicitudes.
+
+        Obtiene elementos de la cola con un timeout, simula el procesamiento y marca
+        cada tarea como completada.
+        """
         logger.info(f"Iniciando {self.name}")
         while self.running:
             try:
-                # Obtener un elemento de la cola con timeout para permitir finalización
+                # Obtener un elemento de la cola con timeout para permitir la finalización
                 solicitud = self.recursos.cola_solicitudes.get(timeout=1)
 
-                # Simulación de procesamiento
+                # Simulación del procesamiento de la solicitud
                 time.sleep(0.1)
 
-                # Registrar procesamiento
+                # Registrar la solicitud procesada (se muestra solo los primeros 50 caracteres)
                 logger.debug(f"Procesada solicitud: {solicitud[:50]}...")
 
-                # Marcar tarea como completada
+                # Marcar la tarea como completada
                 self.recursos.cola_solicitudes.task_done()
             except queue.Empty:
-                # Timeout, verificar si debemos seguir ejecutando
-                pass
+                # No hay solicitudes en la cola, continuar esperando
+                continue
             except Exception as e:
                 logger.error(f"Error en {self.name}: {str(e)}")
 
     def stop(self):
-        """Detiene el procesador de cola"""
+        """
+        Detiene el procesador de la cola.
+        """
         self.running = False
         logger.info(f"Deteniendo {self.name}")

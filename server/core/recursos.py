@@ -2,11 +2,16 @@ from datetime import datetime
 import threading
 import queue
 from typing import Dict, List
+
 from ..config import logger
 
 
-# Recurso compartido: contador de solicitudes y datos simulados
 class RecursosCompartidos:
+    """
+    Gestiona los recursos compartidos del servidor, incluyendo el contador de solicitudes,
+    almacenamiento de datos, cola de solicitudes y registro de solicitudes realizadas.
+    """
+
     def __init__(self):
         self.lock = threading.Lock()
         self.semaforo_datos = threading.Semaphore(1)
@@ -14,11 +19,18 @@ class RecursosCompartidos:
         self.datos = []
         self.max_datos = 100
         self.cola_solicitudes = queue.Queue(maxsize=50)
-        self.solicitudes_realizadas = []  # Nueva lista para trackear solicitudes
+        self.solicitudes_realizadas = []  # Lista para rastrear solicitudes
         self.max_solicitudes = 1000  # Límite para evitar consumo excesivo de memoria
 
     def registrar_solicitud(self, ip: str, metodo: str, ruta: str) -> None:
-        """Registra una solicitud realizada al servidor"""
+        """
+        Registra una solicitud realizada al servidor.
+
+        Args:
+            ip (str): Dirección IP del cliente.
+            metodo (str): Método HTTP utilizado.
+            ruta (str): Ruta solicitada.
+        """
         solicitud = {
             "timestamp": datetime.now().isoformat(),
             "ip": ip,
@@ -26,7 +38,6 @@ class RecursosCompartidos:
             "ruta": ruta
         }
 
-        # Usar lock para modificar lista de solicitudes de forma segura
         with self.lock:
             if len(self.solicitudes_realizadas) >= self.max_solicitudes:
                 # Eliminar la solicitud más antigua si se supera el límite
@@ -34,59 +45,80 @@ class RecursosCompartidos:
             self.solicitudes_realizadas.append(solicitud)
 
     def obtener_solicitudes(self) -> List[Dict]:
-        """Obtiene una copia de las solicitudes realizadas"""
+        """
+        Obtiene una copia de las solicitudes realizadas.
+
+        Returns:
+            List[Dict]: Lista de solicitudes.
+        """
         with self.lock:
             return self.solicitudes_realizadas.copy()
 
-
     def incrementar_contador(self) -> int:
-        with self.lock:  # Evitar condiciones de carrera
+        """
+        Incrementa el contador de solicitudes de forma segura.
+
+        Returns:
+            int: El nuevo valor del contador.
+        """
+        with self.lock:
             self.contador_solicitudes += 1
             return self.contador_solicitudes
 
-
-
     def agregar_dato(self, dato: Dict) -> bool:
-        self.semaforo_datos.acquire()
-        try:
+        """
+        Agrega un dato a la lista. Si se alcanza el límite, elimina el dato más antiguo.
+
+        Args:
+            dato (Dict): Dato a agregar.
+
+        Returns:
+            bool: True si el dato se agregó correctamente.
+        """
+        with self.semaforo_datos:
             if len(self.datos) >= self.max_datos:
-                # Evitar crecimiento ilimitado eliminando el dato más antiguo
                 self.datos.pop(0)
             self.datos.append(dato)
             return True
-        finally:
-            # Garantiza liberación del semáforo incluso si ocurre una excepción
-            self.semaforo_datos.release()
-
-
 
     def obtener_datos(self) -> List[Dict]:
-        self.semaforo_datos.acquire()
-        try:
-            # Devolver una copia para evitar modificaciones externas
+        """
+        Obtiene una copia de los datos almacenados.
+
+        Returns:
+            List[Dict]: Lista de datos.
+        """
+        with self.semaforo_datos:
             return self.datos.copy()
-        finally:
-            self.semaforo_datos.release()
-
-
 
     def agregar_solicitud_a_cola(self, solicitud: str) -> bool:
+        """
+        Intenta agregar una solicitud a la cola con un timeout para evitar bloqueos indefinidos.
+
+        Args:
+            solicitud (str): Solicitud a agregar.
+
+        Returns:
+            bool: True si se agregó la solicitud, False si la cola está llena.
+        """
         try:
-            # Intenta agregar a la cola con timeout para evitar bloqueos indefinidos
             self.cola_solicitudes.put(solicitud, timeout=2)
             return True
         except queue.Full:
             logger.warning("Cola de solicitudes llena, descartando solicitud")
             return False
 
-
-
     def obtener_stats(self) -> Dict:
+        """
+        Retorna estadísticas del servidor.
+
+        Returns:
+            Dict: Estadísticas que incluyen total de solicitudes, cantidad de datos almacenados
+                  y tamaño actual de la cola.
+        """
         with self.lock:
             return {
                 "total_solicitudes": self.contador_solicitudes,
                 "datos_almacenados": len(self.datos),
                 "tamano_cola": self.cola_solicitudes.qsize()
             }
-
-

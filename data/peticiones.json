@@ -388,5 +388,31 @@
       "timestamp": "2025-03-25T23:33:21.044137",
       "id": 5
     }
+  },
+  {
+    "id": 14,
+    "timestamp": "2025-03-26T00:06:24.661559",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742943982.1006963,
+      "timestamp": "2025-03-26T00:06:24.661559",
+      "id": 14
+    }
+  },
+  {
+    "id": 22,
+    "timestamp": "2025-03-26T00:06:26.279925",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742943982.1006963,
+      "timestamp": "2025-03-26T00:06:26.279925",
+      "id": 22
+    }
   }
 ]

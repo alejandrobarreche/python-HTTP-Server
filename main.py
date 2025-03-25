@@ -1,9 +1,9 @@
 """
-Servidor HTTP Concurrente en Python
------------------------------------
-Este módulo implementa un servidor HTTP sencillo que utiliza threads para manejar múltiples
-conexiones concurrentes.
+Servidor HTTP concurrente en Python
+------------------------------------
+Inicia un servidor HTTP simple usando hilos para manejar múltiples conexiones al mismo tiempo.
 """
+
 import argparse
 import logging
 import threading
@@ -14,56 +14,72 @@ from server.core.http_server import ThreadingHTTPServer
 from server.core.handler import HTTPRequestHandler
 from server.core.procesador import ProcesadorCola
 
-# Función principal para iniciar el servidor
+
 def iniciar_servidor(host='localhost', puerto=8080, debug=False):
-    """Inicia el servidor HTTP concurrente"""
-    # Configurar nivel de logging según modo debug
+    """
+    Inicia el servidor HTTP y el procesador de la cola de tareas en hilos separados.
+
+    Args:
+        host (str): Dirección del host.
+        puerto (int): Puerto en el que se ejecutará el servidor.
+        debug (bool): Activa el modo de depuración.
+    """
     if debug:
         logger.setLevel(logging.DEBUG)
 
     try:
-        # Crear servidor
-        servidor = ThreadingHTTPServer((host, puerto), HTTPRequestHandler)
+        # Crear el servidor HTTP
+        server = ThreadingHTTPServer((host, puerto), HTTPRequestHandler)
 
-        # Iniciar procesador de cola en segundo plano
+        # Iniciar el procesador de fondo para gestionar la cola de tareas
         procesador = ProcesadorCola(HTTPRequestHandler.recursos)
         procesador.start()
 
-        # Iniciar servidor en un thread separado para poder capturar Ctrl+C
-        server_thread = threading.Thread(target=servidor.serve_forever, daemon=True)
-        server_thread.start()
+        # Levantar el servidor en un hilo para permitir la interrupción con Ctrl+C
+        thread_server = threading.Thread(target=server.serve_forever, daemon=True)
+        thread_server.start()
 
-        logger.info(f"Servidor HTTP concurrente corriendo en http://{host}:{puerto}/")
-        logger.info(f"Presione Ctrl+C para detener el servidor")
+        logger.info(f"Servidor HTTP activo en http://{host}:{puerto}/")
+        logger.info("Presiona Ctrl+C para detenerlo")
 
-        # Mantener el programa principal ejecutándose
+        # Mantener el hilo principal activo
         while True:
             time.sleep(1)
 
     except KeyboardInterrupt:
-        logger.info("Interrupción de teclado recibida, cerrando servidor...")
+        logger.info("Detención solicitada por el usuario.")
     except Exception as e:
-        logger.error(f"Error al iniciar servidor: {str(e)}")
+        logger.error(f"Error al arrancar el servidor: {e}")
     finally:
-        # Cleanup
         try:
-            servidor.shutdown()
-            servidor.server_close()
+            server.shutdown()
+            server.server_close()
             procesador.stop()
-            logger.info("Servidor detenido correctamente")
+            logger.info("Servidor cerrado correctamente.")
         except UnboundLocalError:
-            # Si el servidor no llegó a crearse
             pass
 
-# Punto de entrada si se ejecuta como script
+
 if __name__ == "__main__":
-    # Configurar argumentos de línea de comandos
-    parser = argparse.ArgumentParser(description="Servidor HTTP Concurrente en Python")
-    parser.add_argument("--host", default="localhost", help="Dirección de host (default: localhost)")
-    parser.add_argument("--port", type=int, default=8000, help="Puerto (default: 8000)")
-    parser.add_argument("--debug", action="store_true", help="Activa modo debug con logging detallado")
+    parser = argparse.ArgumentParser(
+        description="Servidor HTTP multithread en Python"
+    )
+    parser.add_argument(
+        "--host",
+        default="localhost",
+        help="Dirección del host (por defecto: localhost)"
+    )
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=8000,
+        help="Puerto del servidor (por defecto: 8000)"
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Activa logs en modo debug"
+    )
 
     args = parser.parse_args()
-
-    # Iniciar servidor con los parámetros especificados
     iniciar_servidor(host=args.host, puerto=args.port, debug=args.debug)
