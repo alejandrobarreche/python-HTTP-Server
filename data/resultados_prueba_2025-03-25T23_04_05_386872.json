@@ -1,0 +1,345 @@
+{
+  "timestamp": 1742940245.3868728,
+  "fecha": "2025-03-25 23:04:05",
+  "analisis": {
+    "total_solicitudes": 40,
+    "solicitudes_exitosas": 38,
+    "tasa_exito": 0.95,
+    "tiempos": {
+      "promedio": 3.139438647031784,
+      "minimo": 2.034681558609009,
+      "maximo": 5.097876787185669,
+      "p50": 3.0266828536987305,
+      "p90": 5.033499717712402,
+      "p95": 5.049325942993164,
+      "p99": 5.097876787185669
+    },
+    "codigos_respuesta": {
+      "201": 8,
+      "200": 30,
+      "400": 2
+    }
+  },
+  "resultados_detallados": [
+    {
+      "id": 0,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.091588258743286,
+      "exito": true
+    },
+    {
+      "id": 1,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0872433185577393,
+      "exito": true
+    },
+    {
+      "id": 2,
+      "url": "http://localhost:8080/sleep/3",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.1480934619903564,
+      "exito": true
+    },
+    {
+      "id": 3,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 2.6115615367889404,
+      "exito": true
+    },
+    {
+      "id": 4,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.629650592803955,
+      "exito": true
+    },
+    {
+      "id": 5,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.0921614170074463,
+      "exito": true
+    },
+    {
+      "id": 6,
+      "url": "http://localhost:8080/sleep/1",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.089512586593628,
+      "exito": true
+    },
+    {
+      "id": 7,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.0545802116394043,
+      "exito": true
+    },
+    {
+      "id": 8,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.062764883041382,
+      "exito": true
+    },
+    {
+      "id": 9,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.61275315284729,
+      "exito": true
+    },
+    {
+      "id": 10,
+      "url": "http://localhost:8080/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.625629186630249,
+      "exito": true
+    },
+    {
+      "id": 11,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.097876787185669,
+      "exito": true
+    },
+    {
+      "id": 12,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0398850440979004,
+      "exito": true
+    },
+    {
+      "id": 13,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.053542137145996,
+      "exito": true
+    },
+    {
+      "id": 14,
+      "url": "http://localhost:8080/sleep/3",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0887744426727295,
+      "exito": true
+    },
+    {
+      "id": 15,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 2.0600948333740234,
+      "exito": true
+    },
+    {
+      "id": 16,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.078507423400879,
+      "exito": true
+    },
+    {
+      "id": 17,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0773158073425293,
+      "exito": true
+    },
+    {
+      "id": 18,
+      "url": "http://localhost:8080/sleep/1",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.0433239936828613,
+      "exito": true
+    },
+    {
+      "id": 19,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.046047210693359,
+      "exito": true
+    },
+    {
+      "id": 20,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0421738624572754,
+      "exito": true
+    },
+    {
+      "id": 21,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.067229509353638,
+      "exito": true
+    },
+    {
+      "id": 22,
+      "url": "http://localhost:8080/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0549216270446777,
+      "exito": true
+    },
+    {
+      "id": 23,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.045225143432617,
+      "exito": true
+    },
+    {
+      "id": 24,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.08643364906311,
+      "exito": true
+    },
+    {
+      "id": 25,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.047919034957886,
+      "exito": true
+    },
+    {
+      "id": 26,
+      "url": "http://localhost:8080/sleep/3",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0413901805877686,
+      "exito": true
+    },
+    {
+      "id": 27,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.034681558609009,
+      "exito": true
+    },
+    {
+      "id": 28,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0488762855529785,
+      "exito": true
+    },
+    {
+      "id": 29,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.066540956497192,
+      "exito": true
+    },
+    {
+      "id": 30,
+      "url": "http://localhost:8080/sleep/1",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.0266828536987305,
+      "exito": true
+    },
+    {
+      "id": 31,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 400,
+      "tiempo_segundos": 2.0477354526519775,
+      "exito": false
+    },
+    {
+      "id": 32,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0435774326324463,
+      "exito": true
+    },
+    {
+      "id": 33,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.025711536407471,
+      "exito": true
+    },
+    {
+      "id": 34,
+      "url": "http://localhost:8080/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 5.049325942993164,
+      "exito": true
+    },
+    {
+      "id": 35,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 4.03160548210144,
+      "exito": true
+    },
+    {
+      "id": 36,
+      "url": "http://localhost:8080/status",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0404884815216064,
+      "exito": false
+    },
+    {
+      "id": 37,
+      "url": "http://localhost:8080/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.0328004360198975,
+      "exito": true
+    },
+    {
+      "id": 38,
+      "url": "http://localhost:8080/sleep/3",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.01982045173645,
+      "exito": true
+    },
+    {
+      "id": 39,
+      "url": "http://localhost:8080/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.033499717712402,
+      "exito": true
+    }
+  ]
+}

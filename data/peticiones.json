@@ -1,0 +1,392 @@
+[
+  {
+    "id": 5,
+    "timestamp": "2025-03-25T22:17:17.554858",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742937435.5126925,
+      "timestamp": "2025-03-25T22:17:17.554858",
+      "id": 5
+    }
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-03-25T22:17:17.557669",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742937435.5126925,
+      "timestamp": "2025-03-25T22:17:17.557669",
+      "id": 9
+    }
+  },
+  {
+    "id": 16,
+    "timestamp": "2025-03-25T22:17:19.596188",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742937435.5126925,
+      "timestamp": "2025-03-25T22:17:19.596188",
+      "id": 16
+    }
+  },
+  {
+    "id": 31,
+    "timestamp": "2025-03-25T22:18:57.105292",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742937534.5429318,
+      "timestamp": "2025-03-25T22:18:57.105292",
+      "id": 31
+    }
+  },
+  {
+    "id": 6,
+    "timestamp": "2025-03-25T22:24:07.319366",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742937845.2587543,
+      "timestamp": "2025-03-25T22:24:07.319366",
+      "id": 6
+    }
+  },
+  {
+    "id": 12,
+    "timestamp": "2025-03-25T22:24:07.851579",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742937845.2587543,
+      "timestamp": "2025-03-25T22:24:07.851579",
+      "id": 12
+    }
+  },
+  {
+    "id": 16,
+    "timestamp": "2025-03-25T22:24:09.362239",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742937845.2587543,
+      "timestamp": "2025-03-25T22:24:09.362239",
+      "id": 16
+    }
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-03-25T22:27:40.965371",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742938058.9013565,
+      "timestamp": "2025-03-25T22:27:40.965371",
+      "id": 9
+    }
+  },
+  {
+    "id": 18,
+    "timestamp": "2025-03-25T22:27:43.021617",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742938058.9013565,
+      "timestamp": "2025-03-25T22:27:43.021617",
+      "id": 18
+    }
+  },
+  {
+    "id": 27,
+    "timestamp": "2025-03-25T22:42:12.147282",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742938930.023363,
+      "timestamp": "2025-03-25T22:42:12.147282",
+      "id": 27
+    }
+  },
+  {
+    "id": 31,
+    "timestamp": "2025-03-25T22:42:12.647788",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742938930.023363,
+      "timestamp": "2025-03-25T22:42:12.647788",
+      "id": 31
+    }
+  },
+  {
+    "id": 37,
+    "timestamp": "2025-03-25T22:42:14.206333",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742938930.023363,
+      "timestamp": "2025-03-25T22:42:14.206333",
+      "id": 37
+    }
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-03-25T22:47:51.403291",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742939269.355148,
+      "timestamp": "2025-03-25T22:47:51.403291",
+      "id": 3
+    }
+  },
+  {
+    "id": 8,
+    "timestamp": "2025-03-25T22:47:51.407118",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742939269.355148,
+      "timestamp": "2025-03-25T22:47:51.407118",
+      "id": 8
+    }
+  },
+  {
+    "id": 15,
+    "timestamp": "2025-03-25T22:47:53.458687",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742939269.355148,
+      "timestamp": "2025-03-25T22:47:53.458687",
+      "id": 15
+    }
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-03-25T22:49:30.053670",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742939367.9885187,
+      "timestamp": "2025-03-25T22:49:30.053670",
+      "id": 7
+    }
+  },
+  {
+    "id": 10,
+    "timestamp": "2025-03-25T22:49:30.568976",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742939367.9885187,
+      "timestamp": "2025-03-25T22:49:30.568976",
+      "id": 10
+    }
+  },
+  {
+    "id": 17,
+    "timestamp": "2025-03-25T22:49:32.107781",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742939367.9885187,
+      "timestamp": "2025-03-25T22:49:32.107781",
+      "id": 17
+    }
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-03-25T23:00:44.199506",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742940042.1557827,
+      "timestamp": "2025-03-25T23:00:44.199506",
+      "id": 5
+    }
+  },
+  {
+    "id": 11,
+    "timestamp": "2025-03-25T23:00:44.206389",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742940042.1557827,
+      "timestamp": "2025-03-25T23:00:44.206389",
+      "id": 11
+    }
+  },
+  {
+    "id": 18,
+    "timestamp": "2025-03-25T23:00:46.245217",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742940042.1557827,
+      "timestamp": "2025-03-25T23:00:46.245217",
+      "id": 18
+    }
+  },
+  {
+    "id": 7,
+    "timestamp": "2025-03-25T23:03:52.157449",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Test 3",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:52.157449",
+      "id": 7
+    }
+  },
+  {
+    "id": 9,
+    "timestamp": "2025-03-25T23:03:52.159483",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 7,
+      "nombre": "Test 7",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:52.159483",
+      "id": 9
+    }
+  },
+  {
+    "id": 17,
+    "timestamp": "2025-03-25T23:03:54.210310",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 11,
+      "nombre": "Test 11",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:54.210310",
+      "id": 17
+    }
+  },
+  {
+    "id": 23,
+    "timestamp": "2025-03-25T23:03:55.204286",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 15,
+      "nombre": "Test 15",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:55.204286",
+      "id": 23
+    }
+  },
+  {
+    "id": 29,
+    "timestamp": "2025-03-25T23:03:56.757964",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 19,
+      "nombre": "Test 19",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:56.757964",
+      "id": 29
+    }
+  },
+  {
+    "id": 33,
+    "timestamp": "2025-03-25T23:03:58.251718",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 23,
+      "nombre": "Test 23",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:58.251718",
+      "id": 33
+    }
+  },
+  {
+    "id": 37,
+    "timestamp": "2025-03-25T23:03:58.800120",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 27,
+      "nombre": "Test 27",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:03:58.800120",
+      "id": 37
+    }
+  },
+  {
+    "id": 44,
+    "timestamp": "2025-03-25T23:04:00.312947",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 31,
+      "nombre": "Test 31",
+      "timestamp_cliente": 1742940230.05056,
+      "timestamp": "2025-03-25T23:04:00.312947",
+      "id": 44
+    }
+  },
+  {
+    "id": 5,
+    "timestamp": "2025-03-25T23:33:21.044137",
+    "metodo": "POST",
+    "path": "/data",
+    "data": {
+      "valor": 3,
+      "nombre": "Item 3",
+      "ts": 1742941998.9803512,
+      "timestamp": "2025-03-25T23:33:21.044137",
+      "id": 5
+    }
+  }
+]
