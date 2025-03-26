@@ -1,0 +1,825 @@
+{
+  "timestamp": 1742998263.414287,
+  "fecha": "2025-03-26 15:11:03",
+  "analisis": {
+    "total_solicitudes": 100,
+    "solicitudes_exitosas": 92,
+    "tasa_exito": 0.92,
+    "tiempos": {
+      "promedio": 3.5977483797073364,
+      "minimo": 2.0236170291900635,
+      "maximo": 6.65856146812439,
+      "p50": 3.0376944541931152,
+      "p90": 6.071040868759155,
+      "p95": 6.118721961975098,
+      "p99": 6.65856146812439
+    },
+    "codigos_respuesta": {
+      "200": 75,
+      "201": 17,
+      "400": 8
+    }
+  },
+  "resultados_detallados": [
+    {
+      "id": 0,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.158208131790161,
+      "exito": true
+    },
+    {
+      "id": 1,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.2018229961395264,
+      "exito": true
+    },
+    {
+      "id": 2,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.2077102661132812,
+      "exito": true
+    },
+    {
+      "id": 3,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.2088942527770996,
+      "exito": true
+    },
+    {
+      "id": 4,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.2412784099578857,
+      "exito": true
+    },
+    {
+      "id": 5,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.1972901821136475,
+      "exito": true
+    },
+    {
+      "id": 6,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0448994636535645,
+      "exito": true
+    },
+    {
+      "id": 7,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 2.0918376445770264,
+      "exito": true
+    },
+    {
+      "id": 8,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.055208921432495,
+      "exito": true
+    },
+    {
+      "id": 9,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 5.658116102218628,
+      "exito": true
+    },
+    {
+      "id": 10,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.04949426651001,
+      "exito": true
+    },
+    {
+      "id": 11,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.2131195068359375,
+      "exito": true
+    },
+    {
+      "id": 12,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.215632438659668,
+      "exito": true
+    },
+    {
+      "id": 13,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0777828693389893,
+      "exito": true
+    },
+    {
+      "id": 14,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.65856146812439,
+      "exito": true
+    },
+    {
+      "id": 15,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.059792518615723,
+      "exito": true
+    },
+    {
+      "id": 16,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0538687705993652,
+      "exito": false
+    },
+    {
+      "id": 17,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.06654691696167,
+      "exito": true
+    },
+    {
+      "id": 18,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.087956428527832,
+      "exito": true
+    },
+    {
+      "id": 19,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 3.0599780082702637,
+      "exito": true
+    },
+    {
+      "id": 20,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.048229932785034,
+      "exito": false
+    },
+    {
+      "id": 21,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0529236793518066,
+      "exito": true
+    },
+    {
+      "id": 22,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.06415319442749,
+      "exito": true
+    },
+    {
+      "id": 23,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.1552999019622803,
+      "exito": true
+    },
+    {
+      "id": 24,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.142271518707275,
+      "exito": true
+    },
+    {
+      "id": 25,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.154487371444702,
+      "exito": true
+    },
+    {
+      "id": 26,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0795018672943115,
+      "exito": true
+    },
+    {
+      "id": 27,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 3.089264392852783,
+      "exito": true
+    },
+    {
+      "id": 28,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.068575143814087,
+      "exito": true
+    },
+    {
+      "id": 29,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0697643756866455,
+      "exito": true
+    },
+    {
+      "id": 30,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0262885093688965,
+      "exito": true
+    },
+    {
+      "id": 31,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.023996829986572,
+      "exito": true
+    },
+    {
+      "id": 32,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.079116106033325,
+      "exito": true
+    },
+    {
+      "id": 33,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.055236101150513,
+      "exito": true
+    },
+    {
+      "id": 34,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0236170291900635,
+      "exito": true
+    },
+    {
+      "id": 35,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.118721961975098,
+      "exito": true
+    },
+    {
+      "id": 36,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.029698848724365,
+      "exito": true
+    },
+    {
+      "id": 37,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0747830867767334,
+      "exito": true
+    },
+    {
+      "id": 38,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0433623790740967,
+      "exito": false
+    },
+    {
+      "id": 39,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 3.0376944541931152,
+      "exito": true
+    },
+    {
+      "id": 40,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.047346353530884,
+      "exito": true
+    },
+    {
+      "id": 41,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.0378899574279785,
+      "exito": true
+    },
+    {
+      "id": 42,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.051879644393921,
+      "exito": true
+    },
+    {
+      "id": 43,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.034609317779541,
+      "exito": true
+    },
+    {
+      "id": 44,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0872933864593506,
+      "exito": true
+    },
+    {
+      "id": 45,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.056688070297241,
+      "exito": true
+    },
+    {
+      "id": 46,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.021662473678589,
+      "exito": true
+    },
+    {
+      "id": 47,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.0387775897979736,
+      "exito": true
+    },
+    {
+      "id": 48,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.099215507507324,
+      "exito": true
+    },
+    {
+      "id": 49,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.028113842010498,
+      "exito": true
+    },
+    {
+      "id": 50,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.065495014190674,
+      "exito": false
+    },
+    {
+      "id": 51,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.049718141555786,
+      "exito": true
+    },
+    {
+      "id": 52,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.055284023284912,
+      "exito": true
+    },
+    {
+      "id": 53,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0687475204467773,
+      "exito": true
+    },
+    {
+      "id": 54,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0515780448913574,
+      "exito": false
+    },
+    {
+      "id": 55,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.04146146774292,
+      "exito": true
+    },
+    {
+      "id": 56,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0786314010620117,
+      "exito": true
+    },
+    {
+      "id": 57,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.050804138183594,
+      "exito": true
+    },
+    {
+      "id": 58,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.047564744949341,
+      "exito": true
+    },
+    {
+      "id": 59,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 4.040930509567261,
+      "exito": true
+    },
+    {
+      "id": 60,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0702359676361084,
+      "exito": true
+    },
+    {
+      "id": 61,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.036946773529053,
+      "exito": true
+    },
+    {
+      "id": 62,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0507097244262695,
+      "exito": true
+    },
+    {
+      "id": 63,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.054825067520142,
+      "exito": true
+    },
+    {
+      "id": 64,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.106346845626831,
+      "exito": true
+    },
+    {
+      "id": 65,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.0550405979156494,
+      "exito": true
+    },
+    {
+      "id": 66,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0669684410095215,
+      "exito": false
+    },
+    {
+      "id": 67,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.050381422042847,
+      "exito": true
+    },
+    {
+      "id": 68,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.104848623275757,
+      "exito": true
+    },
+    {
+      "id": 69,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.104578971862793,
+      "exito": true
+    },
+    {
+      "id": 70,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0447871685028076,
+      "exito": true
+    },
+    {
+      "id": 71,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 4.074670076370239,
+      "exito": true
+    },
+    {
+      "id": 72,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.1619951725006104,
+      "exito": true
+    },
+    {
+      "id": 73,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.114550590515137,
+      "exito": true
+    },
+    {
+      "id": 74,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.062025785446167,
+      "exito": true
+    },
+    {
+      "id": 75,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.0360095500946045,
+      "exito": true
+    },
+    {
+      "id": 76,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.080026626586914,
+      "exito": true
+    },
+    {
+      "id": 77,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.0434608459472656,
+      "exito": true
+    },
+    {
+      "id": 78,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.0673396587371826,
+      "exito": true
+    },
+    {
+      "id": 79,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.0462751388549805,
+      "exito": true
+    },
+    {
+      "id": 80,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.073678731918335,
+      "exito": true
+    },
+    {
+      "id": 81,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0927445888519287,
+      "exito": true
+    },
+    {
+      "id": 82,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 201,
+      "tiempo_segundos": 2.064274787902832,
+      "exito": true
+    },
+    {
+      "id": 83,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 4.061218738555908,
+      "exito": true
+    },
+    {
+      "id": 84,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.0510711669921875,
+      "exito": true
+    },
+    {
+      "id": 85,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0588924884796143,
+      "exito": true
+    },
+    {
+      "id": 86,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0556323528289795,
+      "exito": false
+    },
+    {
+      "id": 87,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.033376455307007,
+      "exito": true
+    },
+    {
+      "id": 88,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.0974395275115967,
+      "exito": true
+    },
+    {
+      "id": 89,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 3.069471836090088,
+      "exito": true
+    },
+    {
+      "id": 90,
+      "url": "http://localhost:8000/sleep/1",
+      "metodo": "GET",
+      "status_code": 400,
+      "tiempo_segundos": 2.0592610836029053,
+      "exito": false
+    },
+    {
+      "id": 91,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 5.0633625984191895,
+      "exito": true
+    },
+    {
+      "id": 92,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.04437518119812,
+      "exito": true
+    },
+    {
+      "id": 93,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 2.089094638824463,
+      "exito": true
+    },
+    {
+      "id": 94,
+      "url": "http://localhost:8000/sleep/2",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 4.047991037368774,
+      "exito": true
+    },
+    {
+      "id": 95,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 201,
+      "tiempo_segundos": 2.0470480918884277,
+      "exito": true
+    },
+    {
+      "id": 96,
+      "url": "http://localhost:8000/status",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.071040868759155,
+      "exito": true
+    },
+    {
+      "id": 97,
+      "url": "http://localhost:8000/data",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 6.04961371421814,
+      "exito": true
+    },
+    {
+      "id": 98,
+      "url": "http://localhost:8000/sleep/3",
+      "metodo": "GET",
+      "status_code": 200,
+      "tiempo_segundos": 5.063138961791992,
+      "exito": true
+    },
+    {
+      "id": 99,
+      "url": "http://localhost:8000/data",
+      "metodo": "POST",
+      "status_code": 200,
+      "tiempo_segundos": 6.051410675048828,
+      "exito": true
+    }
+  ]
+}
